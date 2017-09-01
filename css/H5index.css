@@ -1,0 +1,251 @@
+html{
+    font-size:100px;
+}
+/*header*/
+header{
+    width:100%;
+    height:.37rem;
+    padding:.21rem 0;
+    border-bottom:1px solid #e3e3e3;
+}
+header .i-logo{
+    width:1.95rem;
+    height:.37rem;
+    margin:0 auto;
+}
+header .i-logo img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+/*nav*/
+nav{
+    height:.8rem;
+    line-height:.8rem;
+    background:#f7f7f7;
+}
+nav .i-link{
+    float:left;
+    padding:0 .25rem;
+    text-align:center;
+    font-size:.36rem;
+    color:#727272;
+}
+nav .i-link.cur{
+    color:#f54343;
+}
+/*focus*/
+.focus{
+    position:relative;
+}
+.focus img{
+    display:block;
+    width:100%;
+}
+.focus .swiper-container-horizontal>.focus .swiper-pagination-bullets,.focus .swiper-pagination-custom,.focus .swiper-pagination-fraction{
+    left:auto;
+    right:.2rem;
+    text-align:right;
+    font-size:.2rem;
+    color:#fff;
+}
+.focus .swiper-pagination-current{
+    font-size:.36rem;
+    color:#f54343;
+}
+.focus .txt{
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:.8rem;
+    line-height:.8rem;
+    font-size:.32rem;
+    color:#fff;
+    padding:0 .7rem 0 .2rem;
+}
+.focus .bg{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:.8rem;
+    background:rgba(0,0,0,.2);
+}
+/*左图右文*/
+/*5套 old-new  box-  flexbox -flex*/
+.item{
+    display:-webkit-box;
+    padding:.24rem .3rem;
+    border-bottom:1px solid #efefef;
+}
+.item .i-pic{
+    width:1.82rem;
+    height:1.3rem;
+    margin-right:.2rem;
+}
+.item .i-pic img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.item .i-thumb{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    /*元素的排列方式:垂直*/
+    -webkit-box-pack:justify;
+    /*元素对齐的方式:两端对齐*/
+}
+.item .i-thumb .i-title{
+    line-height:.44rem;
+    font-size:.36rem;
+    /*多行文本出现省略号必须的4个条件*/
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    overflow:hidden;
+}
+.item .i-thumb .i-title a{
+    color:#1a1a1a;
+}
+.item .i-des{
+    display: -webkit-box;
+    -webkit-box-pack:justify;
+    font-size:.22rem;
+    color:#999;
+}
+.item .i-des .i-icon{
+    display:inline-block;
+    width:.24rem;
+    height:.2rem;
+    background:url("../images/spirit.png") no-repeat;
+    -webkit-background-size:2.87rem 2.02rem;
+    background-size:2.87rem 2.02rem;
+    background-position:-1.58rem 0;
+    vertical-align:middle;
+
+}
+.item .i-des .i-label{
+    color:#f54343;
+    border:1px solid #f54343;
+    -webkit-border-radius:.03rem;
+    border-radius:.03rem;
+    padding: .02rem .1rem;
+    font-size:.12rem;
+    margin-left:.2rem;
+}
+
+/*三小图*/
+.itemPics{
+    padding:.24rem .3rem;
+    border-bottom:1px solid #efefef;
+}
+.itemPics .i-title{
+    line-height:.44rem;
+    font-size:.36rem;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;
+    /*行数*/
+    overflow:hidden;
+}
+.itemPics .i-title a{
+    color:#1a1a1a;
+}
+.itemPics .pics{
+    margin:.2rem 0 .2rem -.09rem;
+    font-size:0;
+    /*解决图片默认产生的几像素的间距*/
+}
+.itemPics .pics img{
+    width:33.33%;
+    padding-left:.09rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.itemPics .i-des{
+    display: -webkit-box;
+    -webkit-box-pack:justify;
+    font-size:.22rem;
+    color:#999;
+}
+.itemPics .i-des .i-info{
+    display: -webkit-box;
+}
+.itemPics .i-des .i-icon{
+    display:inline-block;
+    width:.24rem;
+    height:.2rem;
+    background:url("../images/spirit.png") no-repeat;
+    -webkit-background-size:2.87rem 2.02rem;
+    background-size:2.87rem 2.02rem;
+    background-position:-1.58rem 0;
+    vertical-align:middle;
+}
+.itemPics .i-des .i-source{
+    margin-right:.2rem;
+}
+/*纯文字*/
+.itemTxt .i-title{
+    margin-bottom:.7rem;
+}
+/*大图*/
+.bigPic{
+    position:relative;
+    margin:.2rem 0;
+}
+.bigPic img{
+    display:block;
+    width:100%;
+}
+.bigPic .play-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.2);
+}
+.bigPic .play-icon{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:1.1rem;
+    height:1.1rem;
+    background:url("../images/play.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+.bigPic .play-time{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:1.02rem;
+    margin:auto;
+    font-size:.22rem;
+    color:#fff;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
